@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calc-body">
+      <div class="calc-body__upper">
+        <section class="calc-body__upper-sec">
+          <label class="calc-body__upper-label" for="day">DAY</label>
+          <input class="calc-body__upper-input" type="number" name="day" id="day" placeholder="DD" required min="1" max="31">
+          <p class="emptyError">This field is required</p>
+          <p class="invalidError">Must be a valid day</p>
+        </section>
+        <section class="calc-body__upper-sec">
+          <label class="calc-body__upper-label" for="month">MONTH</label>
+          <input class="calc-body__upper-input" type="number" name="month" id="month" placeholder="MM" required min="1" max="12">
+          <p class="emptyError">This field is required</p>
+          <p class="invalidError">Must be a valid month</p>
+        </section>
+        <section class="calc-body__upper-sec">
+          <label class="calc-body__upper-label" for="year">YEAR</label>
+          <input class="calc-body__upper-input" type="number" name="year" id="year" placeholder="YYYY" required>
+          <p class="emptyError">This field is required</p>
+          <p class="invalidError">Must be in the past</p>
+        </section>
+          <button class="submit"><img class="submit-image" src="./assets/images/icon-arrow.svg"/></button>
+      </div>
+      <div class="calc-body__lower">
+        <h1 class="calc-result"><span class="calc-result__value">- -</span> years</h1>
+        <h1 class="calc-result"><span class="calc-result__value">- -</span> months</h1>
+        <h1 class="calc-result"><span class="calc-result__value">- -</span> days</h1>
+      </div>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    <p class="attribution__acknowledgement">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p class="attribution__autor">Coded by <a href="https://www.frontendmentor.io/profile/AidanRJ1">Aidan Robinson-Jones</a>.</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
